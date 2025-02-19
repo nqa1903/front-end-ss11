@@ -1,0 +1,71 @@
+/* màn hình desktop first*/
+
+h1{
+    background-color: red;
+}
+
+h3{
+    background-color: aquamarine;
+}
+
+/* Laptop - màn hình xách tay */
+
+@media screen and (max-width: 1200px) {
+    h3{
+        background-color: chocolate;
+    }
+}
+
+/* Tablet - máy tính bảng */
+
+@media screen and (max-width : 1024px) {
+    h3{
+        background-color: hotpink;
+    }    
+}
+
+/* Phone - điện thoại di động */
+
+@media screen and (max-width : 480px) {
+    h3{
+        background-color: blue;
+    }
+}
+
+/* Mobile first */
+
+h2 {
+    background-color: yellow;
+}
+
+/* Tablet dọc */
+
+@media screen and (min-width: 480px) {
+    h2{
+        background: yellowgreen;
+    }
+}
+
+/* Tablet ngang */
+
+@media screen and (min-width : 768px) {
+    h2{
+        background: maroon;
+    }
+}
+
+/* laptop */
+
+@media screen and (min-width : 1024px) {
+    h2{
+        background: cadetblue;
+    }
+}
+
+/* desktop */
+
+@media screen and (min-width : 1200px) {
+    h2{
+        background: azure;
+    }
+}

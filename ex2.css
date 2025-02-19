@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section .title {
+  width: 100%;
+  height: 100px;
+  background-color: aquamarine;
+  margin: 12px 0;
+}
+
+section .article,
+section .card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+section .article div,
+section .card div {
+  width: 100%;
+  height: 200px;
+}
+
+section .article div:nth-of-type(1),
+section .card div:nth-of-type(2) {
+  background-color: red;
+}
+
+section .article div:nth-of-type(2),
+section .card div:nth-of-type(3) {
+  background: yellow;
+}
+
+section .card div:nth-of-type(1) {
+  background-color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  section .article,
+  section .card {
+    flex-direction: column;
+  }
+}
